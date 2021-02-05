@@ -1,0 +1,40 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+}
+
+group 'arturmamedov.plugins'
+version '0.0.1'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile 'org.jsoup:jsoup:1.13.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.12.1'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.12.1'
+    compileOnly  'org.projectlombok:lombok:1.18.18'
+    annotationProcessor  'org.projectlombok:lombok:1.18.18'
+}
+
+gradlePlugin {
+    plugins {
+        confluencePublishPlugin {
+            id = 'arturmamedov.plugins.confluence-publish-plugin'
+            implementationClass = 'arturmamedov.plugins.confluencegradleplugin.ConfluencePublishPlugin'
+        }
+    }
+}
+
+publishing {
+    publications {
+        pluginPublication (MavenPublication) {
+            from    components.java
+            groupId    project.group
+            artifactId    "confluence-publish-plugin"
+            version    project.version
+        }
+    }
+}
