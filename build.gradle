@@ -1,6 +1,7 @@
 plugins {
     id 'java-gradle-plugin'
     id 'maven-publish'
+    id "com.gradle.plugin-publish" version "0.12.0"
 }
 
 group 'arturmamedov.plugins'
@@ -35,6 +36,20 @@ publishing {
             groupId    project.group
             artifactId    "confluence-publish-plugin"
             version    project.version
+        }
+    }
+}
+
+pluginBundle {
+    website = 'https://github.com/MamedovArtur/confluence-publish-plugin'
+    vcsUrl = 'https://github.com/MamedovArtur/confluence-publish-plugin.git'
+    tags = ['confluence', 'asciidoc', 'create confluence page']
+
+    plugins {
+        confluencePublishPlugin {
+            id = 'arturmamedov.plugins.confluence-publish-plugin'
+            displayName = 'Confluence Publish Plugin'
+            description = 'Plugin for pushing asciidoctor generated html to Confluence'
         }
     }
 }
