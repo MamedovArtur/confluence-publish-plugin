@@ -4,7 +4,7 @@ plugins {
     id "com.gradle.plugin-publish" version "0.12.0"
 }
 
-group 'arturmamedov.plugins'
+group 'com.github.mamedovartur'
 version '0.0.2'
 repositories {
     mavenCentral()
@@ -23,8 +23,8 @@ dependencies {
 gradlePlugin {
     plugins {
         confluencePublishPlugin {
-            id = 'arturmamedov.plugins.confluence-publish-plugin'
-            implementationClass = 'arturmamedov.plugins.confluencegradleplugin.ConfluencePublishPlugin'
+            id = 'com.github.mamedovartur.confluence-publish-plugin'
+            implementationClass = 'com.github.mamedovartur.confluencegradleplugin.ConfluencePublishPlugin'
         }
     }
 }
@@ -47,7 +47,7 @@ pluginBundle {
 
     plugins {
         confluencePublishPlugin {
-            id = 'arturmamedov.plugins.confluence-publish-plugin'
+            id = 'com.github.mamedovartur.confluence-publish-plugin'
             displayName = 'Confluence Publish Plugin'
             description = 'Plugin for pushing asciidoctor generated html to Confluence'
         }

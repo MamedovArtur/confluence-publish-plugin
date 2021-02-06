@@ -1,6 +1,5 @@
-package arturmamedov.plugins.confluencegradleplugin.dto;
+package com.github.mamedovartur.confluencegradleplugin.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 

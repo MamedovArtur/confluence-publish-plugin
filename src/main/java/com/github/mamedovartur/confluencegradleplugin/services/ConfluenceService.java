@@ -1,19 +1,12 @@
-package arturmamedov.plugins.confluencegradleplugin.services;
+package com.github.mamedovartur.confluencegradleplugin.services;
 
-import arturmamedov.plugins.confluencegradleplugin.dto.ConfluenceGetExistResponse;
-import arturmamedov.plugins.confluencegradleplugin.dto.ConfluenceRequest;
-import arturmamedov.plugins.confluencegradleplugin.dto.CreatePageResponse;
+import com.github.mamedovartur.confluencegradleplugin.dto.ConfluenceGetExistResponse;
+import com.github.mamedovartur.confluencegradleplugin.dto.ConfluenceRequest;
+import com.github.mamedovartur.confluencegradleplugin.dto.CreatePageResponse;
 import lombok.RequiredArgsConstructor;
 
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.URLEncoder;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
 import java.util.Map;
-import java.util.Optional;
 
 
 @RequiredArgsConstructor

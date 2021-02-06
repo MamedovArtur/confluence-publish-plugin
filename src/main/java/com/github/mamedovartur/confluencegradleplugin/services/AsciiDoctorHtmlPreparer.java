@@ -1,6 +1,6 @@
-package arturmamedov.plugins.confluencegradleplugin.services;
+package com.github.mamedovartur.confluencegradleplugin.services;
 
-import arturmamedov.plugins.confluencegradleplugin.models.PageToPublish;
+import com.github.mamedovartur.confluencegradleplugin.models.PageToPublish;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;

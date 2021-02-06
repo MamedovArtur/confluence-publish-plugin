@@ -1,10 +1,9 @@
-package arturmamedov.plugins.confluencegradleplugin.services;
+package com.github.mamedovartur.confluencegradleplugin.services;
 
 
-import arturmamedov.plugins.confluencegradleplugin.dto.ConfluenceGetExistResponse;
-import arturmamedov.plugins.confluencegradleplugin.dto.ConfluenceRequest;
-import arturmamedov.plugins.confluencegradleplugin.dto.CreatePageResponse;
-import arturmamedov.plugins.confluencegradleplugin.services.ConfluenceService;
+import com.github.mamedovartur.confluencegradleplugin.dto.ConfluenceGetExistResponse;
+import com.github.mamedovartur.confluencegradleplugin.dto.ConfluenceRequest;
+import com.github.mamedovartur.confluencegradleplugin.dto.CreatePageResponse;
 import lombok.RequiredArgsConstructor;
 
 

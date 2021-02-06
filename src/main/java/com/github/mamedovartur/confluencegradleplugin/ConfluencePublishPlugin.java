@@ -1,8 +1,7 @@
-package arturmamedov.plugins.confluencegradleplugin;
+package com.github.mamedovartur.confluencegradleplugin;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
-import org.gradle.api.tasks.TaskAction;
 
 public class ConfluencePublishPlugin implements Plugin<Project> {
     private Project project;
@@ -14,7 +13,6 @@ public class ConfluencePublishPlugin implements Plugin<Project> {
         initTask();
     }
 
-    @TaskAction
     public void initTask(){
         project.getTasks().create("publishToConfluence",ConfluencePublishPluginTask.class);
     }

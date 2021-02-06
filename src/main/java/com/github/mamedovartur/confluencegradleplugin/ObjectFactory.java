@@ -1,10 +1,10 @@
-package arturmamedov.plugins.confluencegradleplugin;
+package com.github.mamedovartur.confluencegradleplugin;
 
-import arturmamedov.plugins.confluencegradleplugin.models.BaseCredentials;
-import arturmamedov.plugins.confluencegradleplugin.services.AsciiDoctorHtmlPreparer;
-import arturmamedov.plugins.confluencegradleplugin.services.ConfluenceHttpClient;
-import arturmamedov.plugins.confluencegradleplugin.services.ConfluencePublishService;
-import arturmamedov.plugins.confluencegradleplugin.services.ConfluenceService;
+import com.github.mamedovartur.confluencegradleplugin.models.BaseCredentials;
+import com.github.mamedovartur.confluencegradleplugin.services.AsciiDoctorHtmlPreparer;
+import com.github.mamedovartur.confluencegradleplugin.services.ConfluenceHttpClient;
+import com.github.mamedovartur.confluencegradleplugin.services.ConfluencePublishService;
+import com.github.mamedovartur.confluencegradleplugin.services.ConfluenceService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.net.http.HttpClient;

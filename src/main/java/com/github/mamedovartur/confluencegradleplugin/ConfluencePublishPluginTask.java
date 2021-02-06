@@ -1,7 +1,7 @@
-package arturmamedov.plugins.confluencegradleplugin;
+package com.github.mamedovartur.confluencegradleplugin;
 
-import arturmamedov.plugins.confluencegradleplugin.services.AsciiDoctorHtmlPreparer;
-import arturmamedov.plugins.confluencegradleplugin.services.ConfluencePublishService;
+import com.github.mamedovartur.confluencegradleplugin.services.AsciiDoctorHtmlPreparer;
+import com.github.mamedovartur.confluencegradleplugin.services.ConfluencePublishService;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.Optional;

@@ -1,4 +1,4 @@
-package arturmamedov.plugins.confluencegradleplugin.services;
+package com.github.mamedovartur.confluencegradleplugin.services;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

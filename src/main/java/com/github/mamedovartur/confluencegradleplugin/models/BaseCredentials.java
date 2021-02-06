@@ -1,4 +1,4 @@
-package arturmamedov.plugins.confluencegradleplugin.models;
+package com.github.mamedovartur.confluencegradleplugin.models;
 
 import lombok.AllArgsConstructor;
 
