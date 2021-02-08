@@ -1,7 +1,7 @@
 Gradle plugin for create pages in Confluence from asciidoctor generated html
 ```groovy
 plugins {
-    id 'com.github.mamedovartur.confluence-publish-plugin' version '0.0.2'
+    id 'com.github.mamedovartur.confluence-publish-plugin' version '0.0.3'
 }
 ```
 plugin configuration
@@ -26,7 +26,7 @@ example build.gradle
 ```groovy
 plugins {
     id 'java'
-    id 'com.github.mamedovartur.confluence-publish-plugin' version '0.0.2'
+    id 'com.github.mamedovartur.confluence-publish-plugin' version '0.0.3'
 }
 
 

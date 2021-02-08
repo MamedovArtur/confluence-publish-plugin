@@ -60,7 +60,7 @@ public class ConfluenceHttpClient {
                 .uri(URI.create(baseUri + uri))
                 .header("Authorization", "Basic " + credential);
         System.out.println(method+" "+baseUri + uri);
-        if(method.equals("GET")){
+        if(!method.equals("GET")){
             String requestBody = objectMapper.writeValueAsString(request);
             System.out.println("Request: "+requestBody);
             requestBuilder.headers("Content-type","application/json")
