@@ -73,7 +73,9 @@ public class AsciiDoctorHtmlPreparer {
                 .replaceAll("<dt[^>]*>", "<tr><th>")
                 .replaceAll("</dt>", "</th>")
                 .replaceAll("<dd>", "<td>")
-                .replaceAll("</dd>", "</td></tr>");
+                .replaceAll("</dd>", "</td></tr>")
+                .replaceAll("<img(.*?)>","<img $1/>");
+
 
     }
 
